@@ -1,8 +1,10 @@
+import './js/goblin.png';
+
 document.addEventListener("DOMContentLoaded", () => { 
-  const cells = document.querySelectorAll(itemcell);
+  const cells = document.querySelectorAll('itemcell');
   const image = document.createElement("img");
   image.src = './js/goblin.png';
-  const goblinCell = null;
+  let goblinCell = null;
 
   function indexCell (){
     const index = Math.floor(Math.random() * cells.length);
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function playGoblin (){
-    newIndex = indexCell();
+    const newIndex = indexCell();
     if(goblinCell != newIndex) {
       goblinCell = newIndex;
       goblinCell.appendChild(image);
