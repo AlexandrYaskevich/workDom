@@ -1,9 +1,9 @@
-import './js/goblin.png';
+import goblin from './img/goblin.png';
 
 document.addEventListener("DOMContentLoaded", () => { 
   const cells = document.querySelectorAll('itemcell');
   const image = document.createElement("img");
-  image.src = './js/goblin.png';
+  image.src = goblin;
   let goblinCell = null;
 
   function indexCell (){
@@ -21,4 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(playGoblin, 2000);
 
 });
+
+
 
